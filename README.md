@@ -7,9 +7,8 @@ This repository contains the source code that accompanies our paper "Label a Her
 2) Install any missing requirements via pip or conda: [numpy](https://pypi.org/project/numpy/), [PyTorch](https://pytorch.org/), [OpenCV](https://pypi.org/project/opencv-python/), [Pillow](https://pypi.org/project/Pillow/), [tqdm](https://pypi.org/project/tqdm/), [sklearn](https://pypi.org/project/scikit-learn/), [seaborn](https://pypi.org/project/seaborn/). This repository requires python 3.6+
 
 ## Usage
-To replicate the results obtained in our paper, please download the Cows2021 dataset at: [Here](https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7).
-
-[Download](https://data.bris.ac.uk/data/dataset/44ec2bfeda051bf39f8357d237db03af) the training data.
+To replicate the results obtained in our paper, please use the [Cows2021](https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7) dataset. 
+The training data in in Sub-levels/Train [Download](https://data.bris.ac.uk/data/dataset/44ec2bfeda051bf39f8357d237db03af).
 
 
 Replace the path of the dataset in config.py with your own path.
