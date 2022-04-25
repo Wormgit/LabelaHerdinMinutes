@@ -19,8 +19,8 @@ Merge tracklets from the training dataset: `make_retrain` Replace the merge data
 
 
 ### Test
-To test a trained model, use python `test.py -h`. Examples of runing the code with fully supervised mode or metric learning mode are in run.txt.
-We excluded poor quality data from the test data of Cows2021. Please see `xx list` to find the test data using in our paper.
+To test a trained model, see `run.txt`.
+We excluded poor quality data from the test data of Cows2021. Please see `xx list` to find the test data using in our paper and run `data/selection.py` to move these data to a new folder.
 
 
 ## Citation
