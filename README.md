@@ -6,15 +6,15 @@ This repository contains the source code that accompanies our paper "Label a Her
 1) Clone this repository.
 2) Install any missing requirements via pip or conda: [numpy](https://pypi.org/project/numpy/), [PyTorch](https://pytorch.org/), [OpenCV](https://pypi.org/project/opencv-python/), [Pillow](https://pypi.org/project/Pillow/), [tqdm](https://pypi.org/project/tqdm/), [sklearn](https://pypi.org/project/scikit-learn/), [seaborn](https://pypi.org/project/seaborn/). This repository requires python 3.6+
 
+
 ## Usage
 To replicate the results obtained in our paper, please use the [Cows2021](https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7) dataset. 
 The training data in in Sub-levels/Train [Download](https://data.bris.ac.uk/data/dataset/44ec2bfeda051bf39f8357d237db03af).
 
 
-Replace the path of the dataset in config.py with your own path.
-
 ### Model Re-training
-To train the model, use python `train.py -h` to get help with setting command line arguments. Examples of runing the code with fully supervised mode or metric learning mode are in run.txt. The training dataset is in Cows2021 Sub-levels/Train.
+Replace the path of the training dataset in config.py with your own path. To train the model, use python `train.py -h` to get help with setting command line arguments. Examples of runing the code with fully supervised mode or metric learning mode are in run.txt. The training dataset is in Cows2021 Sub-levels/Train.
+
 
 ### Test
 To test a trained model, use python `test.py -h`. Examples of runing the code with fully supervised mode or metric learning mode are in run.txt.
