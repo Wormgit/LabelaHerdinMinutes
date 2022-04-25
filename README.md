@@ -9,9 +9,12 @@ This repository contains the source code that accompanies our paper "Label a Her
 ## Usage
 To replicate the results obtained in our paper, please download the Cows2021 dataset at: [download](https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7).
 Replace the path of the dataset in config.py with your own path.
-To train the model, use python `train.py -h` to get help with setting command line arguments. Examples of runing the code are in run.txt (fully supervised mode or metric learning mode).
 
-To test a trained model, use python `test.py -h`. Examples of runing the code are in run.txt.
+### Model Re-training
+To train the model, use python `train.py -h` to get help with setting command line arguments. Examples of runing the code with fully supervised mode or metric learning mode are in run.txt.
+
+### Test
+To test a trained model, use python `test.py -h`. Examples of runing the code with fully supervised mode or metric learning mode are in run.txt.
 
 
 ## Citation
