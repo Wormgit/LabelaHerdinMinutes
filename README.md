@@ -14,14 +14,13 @@ Use a computer with GPU.
 
 
 ### Model Re-training
-Replace the path of the training dataset in config.py with your own path. To train the model, use python `train.py -h` to get help with setting command line arguments. Examples of runing the code with fully supervised mode or metric learning mode are in run.txt. The training dataset is in Cows2021 Sub-levels/Train.
-
-merge code: 'make_retrain'
-finetune with merged data: 
+Replace the path of the training dataset in config.py with your own path. To train the model, use python `train.py -h` to get help with setting command line arguments. Examples of runing the code with fully supervised mode or metric learning mode are in `run.txt`. The training dataset is in `Cows2021 Sub-levels/Train`.
+Merge tracklets from the training dataset: `make_retrain` Replace the merge dataset to the origianl one and run `train.py` to finetune the model.
 
 
 ### Test
 To test a trained model, use python `test.py -h`. Examples of runing the code with fully supervised mode or metric learning mode are in run.txt.
+We excluded poor quality data from the test data of Cows2021. Please see `xx list` to find the test data using in our paper.
 
 
 ## Citation
