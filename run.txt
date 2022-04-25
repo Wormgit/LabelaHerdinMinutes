@@ -1,0 +1,30 @@
+### Training Mode: metric learning
+
+python train.py --augment=0 --out_path='xxx' --loss_function='OnlineReciprocalTripletLoss' --model="TripletResnet" --triplet_margin=2 --triplet_selection='HardestNegative' --learning_rate=0.001 --eval_freq=2 --num_epochs=100 --valLoss=0 --run_acc=0 --trainedWeight="defultp"  # remember to check the dataset in /src/config.py #
+
+
+
+### Training Mode: metric learning, go on training with a trained model.
+
+python train.py --augment=0 --out_path='xxx' --loss_function='OnlineReciprocalTripletLoss' --model="TripletResnet" --triplet_margin=2 --triplet_selection='HardestNegative' --learning_rate=0.001 --eval_freq=2 --num_epochs=100 --valLoss=0 --run_acc=0 --trainedWeight="xxxxxxx"  # remember to check the dataset in /src/config.py #
+
+
+
+### Training Mode: fully supervised with 155 individuals (Fig. 7 (b))
+
+python train.py --lambda_factor=0.01 --augment=0 --out_path='xxx' --loss_function='OnlineReciprocalSoftmaxLoss' --model=TripletResnetSoftmax --triplet_margin=2 --triplet_selection='HardestNegative' --learning_rate=0.001 --eval_freq=1 --num_epochs=100 --valLoss=0 --run_acc=0 --trainedWeight="defultp" # /src/config.py:ideal #  loss is right
+
+
+
+### Test:
+
+#run them one by one
+python test_get_label.py --save_path="aaa" --test_dir="bbb" --date 1 1 94 91
+python test_mine_EmbMulti.py --save_path="aaa" --test_dir="bbb" --model_path="ccc" --class_num=153 --date 1 1 94 91 #153 is the number of the test directory
+python utilities/visualise_embeddings.py --train_eb=200 --out_path="aaa" --embeddings_file="aaa" --perplexity=8 --save_txt=0 --components=$M --png_only=1 --overlap_rate=0.3 --acc_folder=1 --show_title=1 --img_dir="bbb" --seek_how_many_round=3 --db_iof=2 --date 1 1 94 91
+# aaa means the same folder for the 3 codes. So does bbb.
+
+
+
+#Pay attention to num_classes in line 59 of /home/io18230/Desktop/github/src/MetricLearning/utilities/:
+#If you are under the fully supervised mode for testing, make sure num_classes is the number of test folders = cattle identities.
