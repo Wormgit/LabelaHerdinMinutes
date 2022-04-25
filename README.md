@@ -20,7 +20,7 @@ Merge tracklets from the training dataset: `make_retrain` Replace the merge data
 
 ### Test
 To test a trained model, see `run.txt`.
-We excluded poor quality data from the test data of Cows2021. Please see `xx list` to find the test data using in our paper and run `data/selection.py` to move these data to a new folder.
+We excluded poor quality data from the test data of Cows2021. Please see `Datasets/data_list.txt` to find the test data using in our paper and run `Datasets/selection.py` to move these data to a new folder.
 
 
 ## Citation
