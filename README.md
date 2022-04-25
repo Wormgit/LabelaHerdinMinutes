@@ -9,7 +9,8 @@ This repository contains the source code that accompanies our paper "Label a Her
 
 ## Usage
 To replicate the results obtained in our paper, please use the [Cows2021](https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7) dataset. 
-The training data in in Sub-levels/Train [Download](https://data.bris.ac.uk/data/dataset/44ec2bfeda051bf39f8357d237db03af).
+The training data in in Cows2021 Dataset/Sub-levels/Identification/Train [Download](https://data.bris.ac.uk/data/dataset/44ec2bfeda051bf39f8357d237db03af). The test data in Cows2021 Dataset/Sub-levels/Identification/Test [Download](https://data.bris.ac.uk/data/dataset/9ce27d05a89d12e4375986946fed59e5)
+
 Use a computer with GPU for training.
 
 
