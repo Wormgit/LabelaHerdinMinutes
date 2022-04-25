@@ -4,11 +4,11 @@ This repository contains the source code that accompanies our paper "Label a Her
 
 ## Installation
 1) Clone this repository.
-2) 2) Install any missing requirements via pip or conda: [numpy](https://pypi.org/project/numpy/), [PyTorch](https://pytorch.org/), [OpenCV](https://pypi.org/project/opencv-python/), [Pillow](https://pypi.org/project/Pillow/), [tqdm](https://pypi.org/project/tqdm/), [sklearn](https://pypi.org/project/scikit-learn/), [seaborn](https://pypi.org/project/seaborn/). This repository requires python 3.6+
+2) Install any missing requirements via pip or conda: [numpy](https://pypi.org/project/numpy/), [PyTorch](https://pytorch.org/), [OpenCV](https://pypi.org/project/opencv-python/), [Pillow](https://pypi.org/project/Pillow/), [tqdm](https://pypi.org/project/tqdm/), [sklearn](https://pypi.org/project/scikit-learn/), [seaborn](https://pypi.org/project/seaborn/). This repository requires python 3.6+
 3) Instead of installing `pycocotools`, use the pycocotools in this repository.
 
 ## Usage
-To replicate the results obtained in our paper, please [download] the Cows2021 dataset at: (https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7).
+To replicate the results obtained in our paper, please download the Cows2021 dataset at: [download](https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7).
 To train the model, use python train.py -h to get help with setting command line arguments. A minimal example would be python train.py --out_path=output/ --folds_file=datasets/OpenSetCows2020/splits/10-90.json.
 format:...
 
