@@ -16,7 +16,7 @@ The training data in in Cows2021 Dataset/Sub-levels/Identification/Train [Downlo
 
 ### Model Re-training
 Replace the path of the training dataset in config.py with your own path. To train the model, use python `train.py -h` to get help with setting command line arguments. Examples of runing the code with fully supervised mode or metric learning mode are in `run.txt`. The training dataset is in `Cows2021 Sub-levels/Train`.
-Merge tracklets from the training dataset: `make_retrain` Replace the merge dataset to the origianl one and run `train.py` to finetune the model.
+Merge tracklets from the training dataset: `Datasets/make_retrain` Replace the merge dataset to the origianl one and run `train.py` to finetune the model.
 
 
 ### Test
