@@ -8,9 +8,8 @@ This repository contains the source code that accompanies our paper "Label a Her
 
 ## Usage
 To replicate the results obtained in our paper, please download the Cows2021 dataset at: [download](https://data.bris.ac.uk/data/dataset/4vnrca7qw1642qlwxjadp87h7).
-Replace the path in config.py with your own path.
-To train the model, use python train.py -h to get help with setting command line arguments. A minimal example would be python train.py --out_path=output/ --folds_file=datasets/OpenSetCows2020/splits/10-90.json.
-format:...
+Replace the path of the dataset in config.py with your own path.
+To train the model, use python train.py -h to get help with setting command line arguments. See run.txt to see how to run the code with fully supervised mode or metric learning mode.
 
 To test a trained model, use python test.py -h. A minimal example would be python test.py --model_path=output/fold_0/best_model_state.pkl --folds_file=datasets/OpenSetCows2020/splits/10-90.json --save_path=output/fold_0/.
 
